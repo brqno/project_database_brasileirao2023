@@ -101,7 +101,7 @@ No Power BI Desktop, use **Obter dados > SQL Server** e conecte ao banco configu
 - `id_time_fora` e `nome_time_fora`
 - `gols_casa` e `gols_fora`
 
-Os demais modelos (`fact_team_matches`, `dim_team` e `dim_date`) ficam disponíveis no banco para análises futuras por time e por data.
+Os demais modelos (`fact_matches`, `dim_team` e `dim_date`) ficam disponíveis no banco para análises futuras por time e por data.
 
 
 ## Seguranca
