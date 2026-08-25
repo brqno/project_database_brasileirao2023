@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: soccer
+    database: SOCCER
+    schema: dbo
+    tables:
+      - name: fixtures_2023

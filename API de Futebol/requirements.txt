@@ -1,0 +1,5 @@
+pandas
+pyodbc
+python-dotenv
+requests
+dbt-sqlserver

@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: stg_fixtures
+    description: Partidas padronizadas a partir da tabela bruta carregada pelo Python.
+    columns:
+      - name: fixture_id
+        tests:
+          - unique
+          - not_null
+
+  - name: int_team_matches
+    description: Uma linha por time em cada partida.
+    columns:
+      - name: fixture_id
+        tests:
+          - not_null
+      - name: team_id
+        tests:
+          - not_null
+
+  - name: fact_matches
+    description: Fato com uma linha por partida.
+    columns:
+      - name: id_partida
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_team_matches
+    description: Fato de desempenho de cada time em cada partida.
+    columns:
+      - name: id_partida
+        tests:
+          - not_null
+      - name: id_time
+        tests:
+          - not_null
+
+  - name: dim_team
+    description: Dimensão dos times participantes.
+    columns:
+      - name: id_time
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_date
+    description: Dimensão de datas das partidas.
+    columns:
+      - name: data_partida
+        tests:
+          - unique
+          - not_null
