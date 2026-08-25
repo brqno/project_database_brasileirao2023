@@ -1,6 +1,8 @@
 # API de Futebol
 
 Pipeline de dados esportivos usando Python, SQL Server, dbt e Power BI.
+<img width="1458" height="756" alt="Power BI Desktop 25_08_2026 08_51_00" src="https://github.com/user-attachments/assets/6cb5e164-841b-4dbc-8402-ae4a9d65a845" />
+<img width="1456" height="815" alt="Power BI Desktop 25_08_2026 08_50_48" src="https://github.com/user-attachments/assets/1fba2d1f-5212-4598-bd44-2efc97db1750" />
 
 ## Arquitetura
 
